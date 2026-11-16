@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dummy O-RAN gNB - O2 Testing Framework</title>
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --accent: #38bdf8;
+            --accent-green: #22c55e;
+            --text-primary: #f8fafc;
+            --text-secondary: #94a3b8;
+            --border: #334155;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .container {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 2.5rem;
+            max-width: 600px;
+            width: 90%;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+        }
+        .badge {
+            display: inline-block;
+            background-color: rgba(34, 197, 94, 0.15);
+            color: var(--accent-green);
+            border: 1px solid var(--accent-green);
+            padding: 0.25rem 0.75rem;
+            border-radius: 9999px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+        h1 {
+            margin: 0 0 0.5rem 0;
+            color: var(--text-primary);
+            font-size: 1.85rem;
+        }
+        p {
+            color: var(--text-secondary);
+            line-height: 1.6;
+            margin: 0 0 1.5rem 0;
+        }
+        .info-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            margin-top: 1.5rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid var(--border);
+        }
+        .info-item {
+            display: flex;
+            flex-direction: column;
+        }
+        .info-label {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--text-secondary);
+        }
+        .info-value {
+            font-size: 1rem;
+            font-weight: 500;
+            color: var(--accent);
+            margin-top: 0.25rem;
+        }
+        footer {
+            margin-top: 2rem;
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="badge">● VNF Emulation Active</div>
+        <h1>Hello from Dummy gNB</h1>
+        <p>This is a simulated Next-Generation NodeB (gNB) application for Milestone 1 of the O-RAN O2 Testing Framework. It verifies the automated CI/CD GitOps build and packaging pipeline.</p>
+        
+        <div class="info-grid">
+            <div class="info-item">
+                <span class="info-label">Framework</span>
+                <span class="info-value">O-RAN O2 Testing Framework</span>
+            </div>
+            <div class="info-item">
+                <span class="info-label">Pipeline Stage</span>
+                <span class="info-value">Milestone 1 (GitOps CI/CD)</span>
+            </div>
+            <div class="info-item">
+                <span class="info-label">Base Image</span>
+                <span class="info-value">Nginx Alpine</span>
+            </div>
+            <div class="info-item">
+                <span class="info-label">Target Cloud</span>
+                <span class="info-value">O-Cloud (StarlingX / OKD / AWS)</span>
+            </div>
+        </div>
+
+        <footer>
+            O-RAN O2 Testing Framework &copy; 2026 | NTUST Research Replication
+        </footer>
+    </div>
+</body>
+</html>
