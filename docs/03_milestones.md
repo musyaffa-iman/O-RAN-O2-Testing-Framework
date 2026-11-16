@@ -5,10 +5,10 @@ The goal is to duplicate the framework described in the thesis. The milestones a
 ## Milestone 1: GitOps Automated Pipeline (Ref: Thesis 3.2)
 **Goal:** Automate the build and deployment trigger.
 - [X] Set up a Git repository as the single source of truth.
-- [ ] Configure Jenkins to monitor the repository for changes.
-- [ ] Create a build script to compile O-RAN software (gNB/DU) and package it into a container image.
-- [ ] Push the container image to an Image Registry.
-- [ ] *Success Criteria:* A git commit automatically triggers a successful image build and push.
+- [X] Configure Jenkins to monitor the repository for changes.
+- [X] Create a build script to compile O-RAN software (gNB/DU) and package it into a container image.
+- [X] Push the container image to an Image Registry.
+- [X] *Success Criteria:* A git commit automatically triggers a successful image build and push.
 
 ## Milestone 2: O2 Interface Abstraction (Ref: Thesis 3.3 & 2.2.2)
 **Goal:** Build the NFO and FOCOM modules to abstract O-Cloud platform differences.
